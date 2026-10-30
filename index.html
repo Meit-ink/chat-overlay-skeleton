@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="widget.css">
+    <script src="widget.js" defer></script>
+</head>
+<body>
+    <!-- Do not forget to delete the example message structures below and uncomment the main-container right under. They are only for testing purposes. You can also use them as a reference for your own message structures. -->
+    <!-- <div class="main-container"></div> -->
+
+    <!-- Example message structures for testing purposes -->
+    <!-- Delete if needed-->
+    <div class="main-container">
+        <div data-sender="${data.userId}" data-msgid="${data.msgId}" class="message-row {animationIn} animated broadcaster avatar-on" id="msg-${totalMessages}">
+            <div class="user-box ${actionClass}">${badges}Broadcaster</div>
+            <div class="design-case">
+                <div class="message-case">
+                    <div class="user-message ${actionClass}">${message}</div>
+                </div>
+            </div>
+            <div class="user-avatar"></div>
+            <div class="avatar-shadow"></div>
+        </div>
+
+        <div data-sender="${data.userId}" data-msgid="${data.msgId}" class="message-row {animationIn} animated viewer avatar-on" id="msg-${totalMessages}">
+            <div class="user-box ${actionClass}">${badges}Viewer</div>
+            <div class="design-case">
+                <div class="message-case">
+                    <div class="user-message ${actionClass}">${message}</div>
+                </div>
+            </div>
+            <div class="user-avatar"></div>
+            <div class="avatar-shadow"></div>
+        </div>
+
+        <div data-sender="${data.userId}" data-msgid="${data.msgId}" class="design-case-wrapper message-row {animationIn} animated moderator avatar-on" id="msg-${totalMessages}">
+            <div class="user-box ${actionClass}">${badges}Moderator</div>
+            <div class="design-case">
+                <div class="message-case">
+                    <div class="user-message ${actionClass}">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed euismod erat.</div>
+                </div>
+            </div>
+            <div class="user-avatar"></div>
+            <div class="avatar-shadow"></div>
+        </div>
+    </div>
+</body>
+</html>
