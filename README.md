@@ -17,6 +17,7 @@ Chat skeleton that can be use on StreamElements. The code is based on the origin
 7. Connect to OBS or StreamLabs and you're good to go !
 
 ## Notes:
+- This is the simple version so you can ONLY send message and delete them (NO event will be add on this version).
 - You can't upload images with StreamElements so keep in mind you have to host them
 - As an alternative you can use .svg for shapes and backgrounds
 - /!\ Be careful as the .svg need to be edited to be use with the CSS (replace all " by ' and # by %23) and take a lot of space so be mindful and think about minimizing them.
